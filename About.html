@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f0f1f0",
+              "inverse-primary": "#a5d0b9",
+              "background": "#f9f9f8",
+              "surface-container": "#edeeed",
+              "on-secondary-fixed": "#251a00",
+              "tertiary-fixed": "#ffdad8",
+              "on-tertiary-container": "#d29895",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "outline-variant": "#c1c8c2",
+              "outline": "#717973",
+              "on-primary-fixed-variant": "#274e3d",
+              "surface-bright": "#f9f9f8",
+              "secondary-fixed": "#ffdf9a",
+              "tertiary": "#401b1b",
+              "surface-container-highest": "#e1e3e2",
+              "tertiary-container": "#5a302f",
+              "secondary": "#785a00",
+              "primary-fixed": "#c1ecd4",
+              "on-background": "#191c1c",
+              "secondary-container": "#ffc300",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e7e8e7",
+              "on-secondary-fixed-variant": "#5a4300",
+              "tertiary-fixed-dim": "#f5b7b4",
+              "secondary-fixed-dim": "#f8be00",
+              "surface-variant": "#e1e3e2",
+              "on-tertiary-fixed": "#331111",
+              "primary-fixed-dim": "#a5d0b9",
+              "on-surface-variant": "#414844",
+              "inverse-surface": "#2e3131",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "surface-tint": "#3f6653",
+              "surface-dim": "#d9dad9",
+              "on-primary-fixed": "#002114",
+              "on-tertiary-fixed-variant": "#673a39",
+              "on-surface": "#191c1c",
+              "on-secondary-container": "#6d5200",
+              "primary": "#012d1d",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#86af99",
+              "surface": "#f9f9f8",
+              "primary-container": "#1b4332"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 h-20 flex items-center">
+<div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center gap-8">
+<a class="flex items-center gap-3 shrink-0" href="Index.html">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center overflow-hidden">
+<img alt="Faith Informed Mental Health School logo" class="w-full h-full object-contain" src="images/School%20And%20Education%20Logo%20Design%20Template%20%20Vector%20and%20PNG_1769384061635.jpg"/>
+</div>
+<span class="text-on-surface font-headline font-bold text-lg leading-tight max-w-[200px]">Faith Informed Mental Health School</span>
+</a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="Index.html">Home</a>
+<a class="text-primary font-semibold border-b-2 border-primary pt-1" href="About.html">About</a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="Faculty.html">Faculty</a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="Academic.html">Academic</a>
+<a class="text-on-surface-variant hover:text-primary font-medium transition-colors" href="Recognition.html">Resources</a>
+</div>
+<div class="flex items-center gap-4 flex-1 justify-end">
+<form class="relative max-w-xs w-full hidden md:block" action="Academic.html" method="get">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-full pl-10 pr-4 py-2 focus:ring-2 focus:ring-primary/20 text-sm" name="q" placeholder="Search courses..." type="search"/>
+</form>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-medium text-sm hover:shadow-lg transition-all active:scale-95 whitespace-nowrap" href="Student.html">
+                    Student Login
+                </a>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Editorial Layout -->
+<section class="relative pt-24 pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="text-secondary font-semibold tracking-widest text-sm uppercase mb-6 block">Our Foundation</span>
+<h1 class="text-primary text-6xl lg:text-7xl font-bold leading-[1.1] mb-8 tracking-tight">
+                        About Our Mission
+                    </h1>
+<div class="ml-0 lg:ml-12 border-l-4 border-secondary-container pl-8">
+<p class="text-on-surface-variant text-xl lg:text-2xl leading-relaxed max-w-2xl font-body">
+                            The Faith-Informed Mental Health School of Continuing Education exists to equip individuals with foundational knowledge of mental health through a Christ-centered, faith-informed lens.
+                        </p>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative z-10 rotate-2 hover:rotate-0 transition-transform duration-700">
+<img alt="Students collaborating" class="w-full h-full object-cover" data-alt="Group of diverse students studying together in a bright library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATb1lbgkChcn9GCUhA21F_MAxQsEcKRUTU-XPDeCxA33s4PaYniSMp1ohyoEPd4me2hnk2NS0I841pLRqFyC8BLwFsfAxBJlVSdhcLFIi0HKIIdT6x7gzLxLNIj_0EIajKpWL0hIGmUvi3xnlioji8NDOL1ih037sQoadk2vRr8grQKPHC3K7B_JVP7-0utsIhTdfGYJ4f3EUr7DZtOLqdSnsNzY0RIIZjnl0P2hU_Va2pnydr5UFhcNviCn8o12JA4t_uJOTNhl8"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-64 h-64 bg-primary-container rounded-[3rem] -z-10 opacity-20"></div>
+</div>
+</div>
+</section>
+<!-- Mission Integration: Bento Grid -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Mission Statement Highlight -->
+<div class="md:col-span-2 bg-surface-container-lowest p-12 rounded-[2.5rem] flex flex-col justify-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">format_quote</span>
+<h2 class="text-3xl lg:text-4xl text-primary font-bold mb-8 leading-snug">
+                            Our mission is to educate, inform, and empower learners by integrating biblical principles with sound mental health understanding.
+                        </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+                            We provide accessible online continuing education courses that support personal growth, ministry effectiveness, and professional development.
+                        </p>
+</div>
+<!-- Visual Accent Card -->
+<div class="bg-primary-container rounded-[2.5rem] p-1 overflow-hidden group">
+<div class="h-full w-full rounded-[2.3rem] overflow-hidden relative">
+<img alt="Peaceful nature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Sunlight filtering through lush forest trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGmjT998VXvgqPJJhewUbHqoB8KOfhgpQtmF6YllIuTT4ecJn5UsmUK2yd5ws6z2-awwIN8DVJG0YxyJkmnIl0EQdliVHXGkqrKI5tMakgFlv3iNbi3iIheuTFHywWwzoQuDhSmKnlx0coNZaNjtHNZXYFW7D78u3oZJ1-mwvFJkQ71ekbe1JMXMjexrI5cTJHFVO7uRW0ILBF1lvymsL4GK4paLSm8Kwzw8aOs0NZEnAaX4_pf3NFpQ2jW78FLW9Hp_tnpx69nLk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline text-xl italic">"The Scholarly Sanctuary"</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategic Pillars -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mt-24">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-container/30 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">clinical_notes</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Foundational Knowledge</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Rigorous academic standards meeting modern clinical requirements.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Biblical Integration</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Deeply rooted in scripture, providing a spiritual anchor to mental health.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-fixed rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-fixed">wifi</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Accessible Learning</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Flexible online delivery designed for busy ministry and clinical professionals.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">diversity_3</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Empowered Growth</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Equipping the heart and mind for effective personal and community healing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reflection Quote Component -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-primary-container rounded-[3rem] p-16 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary-container/10 blur-[100px] rounded-full -mr-24 -mt-24"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/3">
+<div class="aspect-square rounded-full border-8 border-secondary-fixed/20 p-4">
+<img alt="Professor" class="w-full h-full object-cover rounded-full" data-alt="Candid portrait of a professional female educator smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHNivAoXCbwNYBbWNLRJJGCP8-6Tuq81MssCyu0L9tDiPzfHxGRvBcy5w1Akf9VpQA8SBlmBFt1HL2djbT2-HdpRjPwmR1cqdS3PeuH-gvvyJOH_r0i5ZCa7T7pRFxTXzQVhhtXwxcnvLJDZyzBaZvU3UZI4tQlNwdVGup6_BAG66S2gskIQITK5Qi4T5283Ye8SLfRe4Gv6z4P10LDmtGNyToWi_61aUZoIpvoHJBZa-y6yqG5p-DAU9evKdIXSzM1Uvof9YxxaQ"/>
+</div>
+</div>
+<div class="w-full lg:w-2/3">
+<span class="material-symbols-outlined text-secondary-fixed text-6xl mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h3 class="text-secondary-fixed font-headline text-3xl lg:text-4xl leading-relaxed mb-8">
+                                We believe that true healing begins where clinical wisdom meets the restorative peace of faith. Our school is a bridge for those seeking to serve with both excellence and empathy.
+                            </h3>
+<div class="flex flex-col">
+<span class="text-on-primary font-bold text-xl tracking-wide">Dr. Sarah Thompson</span>
+<span class="text-on-primary-container text-sm">Director of Academic Excellence</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest pt-20 pb-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+<div class="lg:col-span-5">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<span class="text-primary font-headline font-bold text-lg">Faith Informed Mental Health School</span>
+</div>
+<p class="text-on-surface-variant max-w-sm leading-relaxed mb-8">
+                        Bridging the gap between clinical excellence and faith-centered compassion through world-class continuing education.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://www.facebook.com/" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://www.youtube.com/" rel="noopener" target="_blank">
+<span class="material-symbols-outlined">smart_display</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-bold text-primary mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="https://www.facebook.com/" rel="noopener" target="_blank">Facebook</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="https://www.youtube.com/" rel="noopener" target="_blank">YouTube</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="Recognition.html#affiliations">Affiliations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Support</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="Recognition.html#accreditations">Accreditations</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="mailto:admissions@faithinformed.edu">Contact</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="Recognition.html#resources">Help Center</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-bold text-primary mb-6">Newsletter</h4>
+<p class="text-sm text-on-surface-variant mb-4">Stay updated with our latest courses.</p>
+<form class="flex gap-2" action="mailto:admissions@faithinformed.edu" method="post" enctype="text/plain">
+<input class="bg-surface-container-high border-none rounded-lg px-4 py-2 w-full text-sm" name="email" placeholder="Email" type="email" required/>
+<button class="bg-primary text-on-primary p-2 rounded-lg" type="submit"><span class="material-symbols-outlined">send</span></button>
+</form>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 pt-8 flex flex-col md:row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm text-center">
+                    © 2024 Faith Informed Mental Health School of Continuing Education. All rights reserved.
+                </p>
+<div class="flex gap-6 text-xs text-outline">
+<a class="hover:text-primary" href="Recognition.html#privacy">Privacy Policy</a>
+<a class="hover:text-primary" href="Recognition.html#terms">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

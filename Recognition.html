@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f0f1f0",
+              "inverse-primary": "#a5d0b9",
+              "background": "#f9f9f8",
+              "surface-container": "#edeeed",
+              "on-secondary-fixed": "#251a00",
+              "tertiary-fixed": "#ffdad8",
+              "on-tertiary-container": "#d29895",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "outline-variant": "#c1c8c2",
+              "outline": "#717973",
+              "on-primary-fixed-variant": "#274e3d",
+              "surface-bright": "#f9f9f8",
+              "secondary-fixed": "#ffdf9a",
+              "tertiary": "#401b1b",
+              "surface-container-highest": "#e1e3e2",
+              "tertiary-container": "#5a302f",
+              "secondary": "#785a00",
+              "primary-fixed": "#c1ecd4",
+              "on-background": "#191c1c",
+              "secondary-container": "#ffc300",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e7e8e7",
+              "on-secondary-fixed-variant": "#5a4300",
+              "tertiary-fixed-dim": "#f5b7b4",
+              "secondary-fixed-dim": "#f8be00",
+              "surface-variant": "#e1e3e2",
+              "on-tertiary-fixed": "#331111",
+              "primary-fixed-dim": "#a5d0b9",
+              "on-surface-variant": "#414844",
+              "inverse-surface": "#2e3131",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "surface-tint": "#3f6653",
+              "surface-dim": "#d9dad9",
+              "on-primary-fixed": "#002114",
+              "on-tertiary-fixed-variant": "#673a39",
+              "on-surface": "#191c1c",
+              "on-secondary-container": "#6d5200",
+              "primary": "#012d1d",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#86af99",
+              "surface": "#f9f9f8",
+              "primary-container": "#1b4332"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(25, 28, 28, 0.06);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f8;
+            color: #191c1c;
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a class="flex items-center gap-4" href="Index.html">
+<div class="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center overflow-hidden">
+<img alt="Faith Informed Mental Health School logo" class="w-full h-full object-contain" src="images/School%20And%20Education%20Logo%20Design%20Template%20%20Vector%20and%20PNG_1769384061635.jpg"/>
+</div>
+<span class="font-headline font-bold text-primary tracking-tight">Faith Informed Mental Health School</span>
+</a>
+<div class="hidden md:flex items-center gap-8 text-on-surface-variant font-medium text-sm">
+<a class="hover:text-primary" href="Index.html">Home</a>
+<a class="hover:text-primary" href="About.html">About</a>
+<a class="hover:text-primary" href="Faculty.html">Faculty</a>
+<a class="hover:text-primary" href="Academic.html">Academic</a>
+<a class="text-primary font-semibold border-b-2 border-primary pt-1" href="Recognition.html">Resources</a>
+</div>
+<div class="flex items-center gap-6">
+<form class="relative hidden lg:block" action="Recognition.html" method="get">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
+<input class="bg-surface-container-low border-none rounded-full pl-10 pr-4 py-2 text-sm focus:ring-1 focus:ring-primary w-48" name="q" placeholder="Search..." type="search"/>
+</form>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-container transition-colors" href="Student.html">
+                    Student Login
+                </a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative overflow-hidden py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase rounded-full mb-6">Academic Excellence</span>
+<h1 class="text-5xl lg:text-7xl text-primary font-bold leading-[1.1] mb-8 tracking-tight">
+                    Recognized Excellence &amp; Strategic Partnerships
+                </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-10">
+                    Our institution stands at the intersection of rigorous clinical scholarship and deep-rooted spiritual wisdom, backed by a global network of accredited partners.
+                </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-primary-container rounded-xl overflow-hidden editorial-shadow">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-80" data-alt="Grand library interior with sunlight streaming through windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy583dTiJH6kyG4HD0yHPFOOG50avS7S1iGXm1j8ayWsEwZMspUjECNaKBBXOGcidZTz9USnhaM1ACguubxx_zz6MVB7X0uXnpwYWN4OTYYfM24Y4xmRBBZJnn4xQGtp2BZ1kjFairbpwHB8rFb6gZiZIdbEvs4Rz83PLMgz4cBSSguBjVa0X2ywmwvjOeGU5ddYyrCOP7n5hZYaOuAAUgWHmk1ueupSoD1M-z91WDeF39AJzLYvIGIkMF1GktLjDspw7w6SFUsuo"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary-fixed p-8 rounded-xl editorial-shadow max-w-xs">
+<span class="material-symbols-outlined text-on-secondary-fixed text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">verified</span>
+<p class="text-on-secondary-fixed font-headline text-lg font-bold italic leading-tight">
+                        "Uniting clinical mastery with the restorative peace of faith."
+                    </p>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Affiliation Section (Editorial Layout) -->
+<section class="py-24 bg-surface-container-low" id="affiliations">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square bg-white rounded-xl flex items-center justify-center p-8 editorial-shadow">
+<span class="material-symbols-outlined text-6xl text-primary/20">church</span>
+</div>
+<div class="aspect-square bg-primary-container rounded-xl flex items-center justify-center p-8 mt-8 editorial-shadow">
+<span class="material-symbols-outlined text-6xl text-primary-fixed">diversity_1</span>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl text-primary font-bold mb-8">Kingdom School of Divinity Partnership</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        We are a proud affiliate of the <span class="text-primary font-bold">Kingdom School of Divinity</span>, a Christ-centered seminary committed to the transformative power of the Gospel. Our shared mission focuses on:
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-primary font-bold">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Church Planting &amp; Development</h4>
+<p class="text-sm text-on-surface-variant">Equipping leaders to establish sustainable spiritual communities.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-primary font-bold">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Clinical Trauma Healing</h4>
+<p class="text-sm text-on-surface-variant">Evidence-based interventions rooted in biblical restoration.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-primary font-bold">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Pastoral Ministry Excellence</h4>
+<p class="text-sm text-on-surface-variant">Holistic care for those who lead the flock.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Reflection Quote -->
+<section class="bg-primary-container relative overflow-hidden py-20">
+<div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed/20 absolute -top-10 left-0" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h2 class="text-3xl lg:text-4xl font-headline text-secondary-fixed italic leading-snug">
+                "Our affiliations are more than academic signatures; they are covenants of shared vision to heal the brokenhearted and equip the called."
+            </h2>
+</div>
+</section>
+<!-- Partners Bento Grid -->
+<section class="py-24 bg-surface" id="resources">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="text-4xl text-primary font-bold mb-4">Global Academic Network</h2>
+<p class="text-on-surface-variant">We collaborate with world-class institutions to ensure our curriculum remains at the forefront of theological and psychological advancement.</p>
+</div>
+<div class="hidden md:block">
+<div class="h-px w-32 bg-outline-variant"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Partner Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform flex flex-col items-center text-center">
+<div class="w-20 h-20 mb-6 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">account_balance</span>
+</div>
+<h3 class="font-bold text-primary mb-2">The Urban Ministry Institute</h3>
+</div>
+<!-- Partner Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform flex flex-col items-center text-center">
+<div class="w-20 h-20 mb-6 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+</div>
+<h3 class="font-bold text-primary mb-2">Lancaster Bible College</h3>
+</div>
+<!-- Partner Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform flex flex-col items-center text-center">
+<div class="w-20 h-20 mb-6 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">auto_stories</span>
+</div>
+<h3 class="font-bold text-primary mb-2">Pillar College</h3>
+</div>
+<!-- Partner Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform flex flex-col items-center text-center">
+<div class="w-20 h-20 mb-6 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+</div>
+<h3 class="font-bold text-primary mb-2">Dallas Christian College</h3>
+</div>
+<!-- Partner Card 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform flex flex-col items-center text-center">
+<div class="w-20 h-20 mb-6 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">temple_hindu</span>
+</div>
+<h3 class="font-bold text-primary mb-2">Fuller Theological Seminary</h3>
+</div>
+<!-- Partner Card 6 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform flex flex-col items-center text-center">
+<div class="w-20 h-20 mb-6 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">location_city</span>
+</div>
+<h3 class="font-bold text-primary mb-2">City Vision University</h3>
+</div>
+<!-- Partner Card 7 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:translate-y-[-4px] transition-transform flex flex-col items-center text-center">
+<div class="w-20 h-20 mb-6 bg-surface-container-low rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
+</div>
+<h3 class="font-bold text-primary mb-2">College of Biblical Studies</h3>
+</div>
+<!-- Extra Information Card -->
+<div class="bg-secondary-container p-8 rounded-xl editorial-shadow flex flex-col justify-center">
+<h3 class="font-headline font-bold text-on-secondary-container text-xl mb-2 italic">Join the Network</h3>
+<p class="text-on-secondary-fixed-variant text-sm mb-4">Partner with us in our mission of faith-informed mental health education.</p>
+<a class="text-on-secondary-container font-bold text-sm underline underline-offset-4" href="mailto:admissions@faithinformed.edu?subject=Partnership%20Inquiry">Learn about partnerships</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Tracks & Certificates -->
+<section class="py-24 bg-surface-container-high relative overflow-hidden" id="accreditations">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5">
+<h2 class="text-4xl text-primary font-bold mb-6">Specialized Tracks &amp; Professional Certifications</h2>
+<p class="text-on-surface-variant mb-8">Our specialized pathways are designed for professionals seeking deep integration between their faith and clinical practice.</p>
+<div class="space-y-6">
+<div class="p-6 bg-white rounded-xl editorial-shadow">
+<span class="text-secondary font-bold text-xs tracking-widest uppercase block mb-2">Pathways</span>
+<h4 class="text-xl font-headline font-bold text-primary mb-4">Christian Chaplains and Coaching</h4>
+<div class="h-2 w-full bg-primary-fixed rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+</div>
+<div class="p-6 bg-white rounded-xl editorial-shadow">
+<span class="text-secondary font-bold text-xs tracking-widest uppercase block mb-2">Leadership</span>
+<h4 class="text-xl font-headline font-bold text-primary mb-4">Torchbearers Institute</h4>
+<div class="h-2 w-full bg-primary-fixed rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/2"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-8 bg-primary rounded-xl text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4">workspace_premium</span>
+<h3 class="text-xl font-bold mb-2">Christian Ministry</h3>
+<p class="text-primary-fixed text-sm opacity-80">Foundational certificate for ecclesial service.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl editorial-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">stars</span>
+<h3 class="text-xl font-bold text-primary mb-2">Christian Leadership</h3>
+<p class="text-on-surface-variant text-sm">Advanced strategic management for faith-based orgs.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl editorial-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">health_and_safety</span>
+<h3 class="text-xl font-bold text-primary mb-2">Trauma Healing</h3>
+<p class="text-on-surface-variant text-sm font-semibold uppercase tracking-tighter">(Certification)</p>
+<p class="text-on-surface-variant text-xs mt-2">Clinical and pastoral approaches to restoration.</p>
+</div>
+<div class="p-8 bg-primary-container rounded-xl text-on-primary">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-4">foundation</span>
+<h3 class="text-xl font-bold text-on-primary mb-2">Church Planting</h3>
+<p class="text-primary-fixed text-sm font-semibold uppercase tracking-tighter">(Certification)</p>
+<p class="text-primary-fixed/80 text-xs mt-2">Architecting resilient and gospel-rich communities.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface text-inverse-on-surface py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">school</span>
+</div>
+<span class="font-headline font-bold text-2xl tracking-tight">Faith Informed Mental Health School</span>
+</div>
+<p class="text-outline-variant max-w-sm mb-8">
+                        The School of Continuing Education is dedicated to providing specialized training for the intersection of clinical excellence and spiritual formation.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors" href="https://www.facebook.com/" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors" href="https://www.youtube.com/" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-sm">play_circle</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Resources</h4>
+<ul class="space-y-4 text-outline-variant text-sm">
+<li><a class="hover:text-secondary-fixed transition-colors" href="Recognition.html#affiliations">Affiliations</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="Recognition.html#accreditations">Accreditations</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="https://www.facebook.com/" rel="noopener" target="_blank">Facebook</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="https://www.youtube.com/" rel="noopener" target="_blank">YouTube</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Support</h4>
+<ul class="space-y-4 text-outline-variant text-sm">
+<li><a class="hover:text-secondary-fixed transition-colors" href="mailto:admissions@faithinformed.edu">Contact</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="Student.html">Student Portal</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="Recognition.html#privacy" id="privacy">Privacy Policy</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="Recognition.html#terms" id="terms">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between gap-6 text-sm text-outline-variant">
+<p>© 2024 Faith Informed Mental Health School of Continuing Education. All rights reserved.</p>
+<div class="flex gap-8">
+<span>Restoring the Soul, Equipping the Mind.</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

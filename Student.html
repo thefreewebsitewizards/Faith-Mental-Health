@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f0f1f0",
+              "inverse-primary": "#a5d0b9",
+              "background": "#f9f9f8",
+              "surface-container": "#edeeed",
+              "on-secondary-fixed": "#251a00",
+              "tertiary-fixed": "#ffdad8",
+              "on-tertiary-container": "#d29895",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "outline-variant": "#c1c8c2",
+              "outline": "#717973",
+              "on-primary-fixed-variant": "#274e3d",
+              "surface-bright": "#f9f9f8",
+              "secondary-fixed": "#ffdf9a",
+              "tertiary": "#401b1b",
+              "surface-container-highest": "#e1e3e2",
+              "tertiary-container": "#5a302f",
+              "secondary": "#785a00",
+              "primary-fixed": "#c1ecd4",
+              "on-background": "#191c1c",
+              "secondary-container": "#ffc300",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e7e8e7",
+              "on-secondary-fixed-variant": "#5a4300",
+              "tertiary-fixed-dim": "#f5b7b4",
+              "secondary-fixed-dim": "#f8be00",
+              "surface-variant": "#e1e3e2",
+              "on-tertiary-fixed": "#331111",
+              "primary-fixed-dim": "#a5d0b9",
+              "on-surface-variant": "#414844",
+              "inverse-surface": "#2e3131",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "surface-tint": "#3f6653",
+              "surface-dim": "#d9dad9",
+              "on-primary-fixed": "#002114",
+              "on-tertiary-fixed-variant": "#673a39",
+              "on-surface": "#191c1c",
+              "on-secondary-container": "#6d5200",
+              "primary": "#012d1d",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#86af99",
+              "surface": "#f9f9f8",
+              "primary-container": "#1b4332"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f9f9f8;
+      }
+      h1, h2, h3 {
+        font-family: 'Noto Serif', serif;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- Top Navigation Bar (Shared Component) -->
+<nav class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a class="flex items-center gap-4" href="Index.html">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center overflow-hidden">
+<img alt="Faith Informed Mental Health School logo" class="w-full h-full object-contain" src="images/School%20And%20Education%20Logo%20Design%20Template%20%20Vector%20and%20PNG_1769384061635.jpg"/>
+</div>
+<span class="font-headline font-bold text-primary tracking-tight">Faith Informed Mental Health School</span>
+</a>
+<div class="hidden md:flex items-center gap-8 text-on-surface-variant font-medium">
+<a class="hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="About.html">About</a>
+<a class="hover:text-primary transition-colors" href="Faculty.html">Faculty</a>
+<a class="hover:text-primary transition-colors" href="Academic.html">Academic</a>
+<a class="hover:text-primary transition-colors" href="Recognition.html">Resources</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-medium hover:bg-primary-container transition-all shadow-sm" href="Student.html">
+                    Student Login
+                </a>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-grow flex items-center justify-center px-6 py-12 relative overflow-hidden">
+<!-- Editorial Background Elements -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-10 translate-x-1/4 skew-x-12"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl -z-10 -translate-x-1/2 translate-y-1/2"></div>
+<div class="w-full max-w-5xl grid md:grid-cols-2 bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0_20px_40px_rgba(25,28,28,0.06)]">
+<!-- Left Side: Editorial Content -->
+<div class="hidden md:flex flex-col justify-center p-16 bg-primary-container text-on-primary relative">
+<div class="absolute top-0 left-0 w-full h-full opacity-10" data-alt="Abstract scholarly library textures and wooden patterns" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAL7VLTak9gdk50lBrpQeDiMqJRcZBXtPP4jOd34Sx0DW3OUu5YbnMH-njgWtq5rDuJYGLJgT2QD0QtoSfUcKaAyCc5iLTDZNbDKh57ET--w0JuO4mgtLnc6pJtSbiHBV49CkrQsKQ4QGlTW611U-2Mw0UO7anF3cgNNOTfSs9do9D7eIbxT1gRoE4XzdWR0UTCmafxlO4t6TTMU_9J_fny9KbpqViSKAjRH9LORR9DfxYhFHVM5knYZmdiokN-Oyl6UXrM_1KMuDc'); background-size: cover;">
+</div>
+<div class="relative z-10">
+<span class="text-secondary-fixed font-semibold tracking-widest text-xs uppercase mb-6 block">The Scholarly Sanctuary</span>
+<h1 class="text-4xl lg:text-5xl font-headline mb-8 leading-tight">Return to your journey of clinical wisdom.</h1>
+<p class="text-on-primary-container text-lg leading-relaxed mb-12 max-w-md">
+                        Access your courses, faculty resources, and the spiritual community dedicated to the intersection of faith and mental wellness.
+                    </p>
+<!-- Reflection Quote Component -->
+<div class="bg-primary/50 p-8 rounded-2xl border-l-4 border-secondary-container">
+<span class="material-symbols-outlined text-secondary-fixed mb-4" data-icon="format_quote">format_quote</span>
+<p class="italic text-on-primary/90 font-headline text-lg">
+                            "Healing is not a destination, but a sacred unfolding of the spirit."
+                        </p>
+</div>
+</div>
+</div>
+<!-- Right Side: Login Form -->
+<div class="p-8 md:p-16 flex flex-col justify-center">
+<div class="mb-10">
+<h2 class="text-3xl font-headline text-on-surface mb-2">Student Portal</h2>
+<p class="text-on-surface-variant">Welcome back. Please enter your credentials.</p>
+</div>
+<form class="space-y-6" action="Index.html" method="get">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant block px-1" for="email">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="mail">mail</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface" id="email" name="email" placeholder="name@university.edu" type="email" required/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant block px-1" for="password">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="lock">lock</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface" id="password" name="password" placeholder="••••••••" type="password" required/>
+</div>
+</div>
+<div class="flex items-center justify-between py-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary/20" type="checkbox"/>
+<span class="text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Remember Me</span>
+</label>
+<a class="text-sm font-semibold text-secondary hover:text-on-secondary-fixed-variant transition-colors" href="mailto:admissions@faithinformed.edu?subject=Password%20Reset">Forgot Password?</a>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold text-lg hover:bg-primary-container transition-all shadow-md flex items-center justify-center gap-2 group" type="submit">
+                        Sign In
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<div class="mt-12 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-on-surface-variant">
+                        New Student? 
+<a class="text-secondary font-bold ml-1 hover:underline decoration-2 underline-offset-4" href="mailto:admissions@faithinformed.edu?subject=Student%20Registration">Register Here</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest py-12 px-6 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 opacity-60 grayscale hover:grayscale-0 transition-all cursor-default">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+<span class="text-sm font-medium text-on-surface-variant">Accredited Institution</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="https://www.facebook.com/" rel="noopener" target="_blank">Facebook</a>
+<a class="hover:text-primary transition-colors" href="https://www.youtube.com/" rel="noopener" target="_blank">YouTube</a>
+<a class="hover:text-primary transition-colors" href="Recognition.html#affiliations">Affiliations</a>
+<a class="hover:text-primary transition-colors" href="Recognition.html#accreditations">Accreditations</a>
+<a class="hover:text-primary transition-colors" href="mailto:admissions@faithinformed.edu">Contact</a>
+</div>
+<p class="text-xs text-outline text-center md:text-right max-w-xs">
+                © 2024 Faith Informed Mental Health School of Continuing Education. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f0f1f0",
+              "inverse-primary": "#a5d0b9",
+              "background": "#f9f9f8",
+              "surface-container": "#edeeed",
+              "on-secondary-fixed": "#251a00",
+              "tertiary-fixed": "#ffdad8",
+              "on-tertiary-container": "#d29895",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "outline-variant": "#c1c8c2",
+              "outline": "#717973",
+              "on-primary-fixed-variant": "#274e3d",
+              "surface-bright": "#f9f9f8",
+              "secondary-fixed": "#ffdf9a",
+              "tertiary": "#401b1b",
+              "surface-container-highest": "#e1e3e2",
+              "tertiary-container": "#5a302f",
+              "secondary": "#785a00",
+              "primary-fixed": "#c1ecd4",
+              "on-background": "#191c1c",
+              "secondary-container": "#ffc300",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e7e8e7",
+              "on-secondary-fixed-variant": "#5a4300",
+              "tertiary-fixed-dim": "#f5b7b4",
+              "secondary-fixed-dim": "#f8be00",
+              "surface-variant": "#e1e3e2",
+              "on-tertiary-fixed": "#331111",
+              "primary-fixed-dim": "#a5d0b9",
+              "on-surface-variant": "#414844",
+              "inverse-surface": "#2e3131",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "surface-tint": "#3f6653",
+              "surface-dim": "#d9dad9",
+              "on-primary-fixed": "#002114",
+              "on-tertiary-fixed-variant": "#673a39",
+              "on-surface": "#191c1c",
+              "on-secondary-container": "#6d5200",
+              "primary": "#012d1d",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#86af99",
+              "surface": "#f9f9f8",
+              "primary-container": "#1b4332"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(25, 28, 28, 0.06);
+        }
+        .asymmetric-blend {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a class="flex items-center gap-4" href="Index.html">
+<div class="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center overflow-hidden">
+<img alt="Faith Informed Mental Health School logo" class="w-full h-full object-contain" src="images/School%20And%20Education%20Logo%20Design%20Template%20%20Vector%20and%20PNG_1769384061635.jpg"/>
+</div>
+<span class="font-headline font-bold text-primary tracking-tight">Faith Informed Mental Health School</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="Index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="About.html">About</a>
+<a class="text-primary border-b-2 border-secondary text-sm font-bold" href="Faculty.html">Faculty</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="Academic.html">Academic</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="Recognition.html">Resources</a>
+</div>
+<div class="flex items-center gap-4">
+<form class="relative" action="Faculty.html" method="get">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full text-sm focus:ring-2 focus:ring-primary w-48 transition-all" name="q" placeholder="Search..." type="search"/>
+</form>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full text-sm font-bold hover:bg-primary-container transition-all" href="Student.html">
+                    Student Login
+                </a>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-24 pb-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant text-xs font-bold rounded-full mb-6 uppercase tracking-widest">Our Faculty</span>
+<h1 class="font-headline text-5xl md:text-6xl text-primary leading-tight mb-8">Guided by wisdom, rooted in <span class="italic">clinical excellence.</span></h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+                        Meet the distinguished scholars and practitioners bridging the gap between spiritual care and evidence-based mental health clinical practice.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Faculty Grid: Editorial Layout -->
+<section class="pb-32 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Dr. Omar Liles - Featured Card -->
+<div class="lg:col-span-8 group">
+<div class="bg-surface-container-lowest editorial-shadow rounded-xl overflow-hidden flex flex-col md:flex-row">
+<div class="md:w-1/2 relative h-96 md:h-auto overflow-hidden">
+<img alt="Dr. Omar Liles" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Distinguished mature man in professional academic attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr_ZjSJAbJacf9Gz_NuBcc_UV9zG3SDsNoB56j_PT_jJtTjXzBJJ9m5qPZxYgeII7n65QrXyJqdb1WX_ZGet-XrKKVA7u68IqaW6u1Qbm0CQjQQqIwu2zV0Md1Dnw1-l4rAzSyFfXFtIfVVurijkwuNBrvhECjlN1ccVX1fycjPOXqRQIz3jSQ5CVex74aFXBRdHjSJRUPshj3pEq1DhxPjMzq4PVrl75bmYeeJXxTZf1qCKLbMxCdKJ3ylDkpTSKFL8myOduzeM4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<div class="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+<div class="mb-6">
+<h2 class="font-headline text-3xl text-primary mb-2">Dr. Omar Liles, D.Min</h2>
+<p class="text-secondary font-bold tracking-wide uppercase text-xs">Founder &amp; CEO</p>
+</div>
+<div class="space-y-4 text-on-surface-variant text-sm leading-relaxed">
+<p>With over 23 years of dedicated service in long-term care, Dr. Liles brings a profound depth of administrative and clinical experience to the institution.</p>
+<p>As the co-founder of Kingdom School of Divinity, he has pioneered educational models that integrate faith and professional development.</p>
+<div class="pt-4 border-t border-outline-variant/30">
+<p class="font-medium text-on-surface">Academic Credentials:</p>
+<ul class="mt-2 space-y-1 text-xs">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[14px]" data-icon="school">school</span> Andersonville Theological Seminary</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[14px]" data-icon="school">school</span> New York Divinity School</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Reflection Quote (Asymmetric Element) -->
+<div class="lg:col-span-4 bg-primary-container p-8 rounded-xl relative overflow-hidden flex flex-col justify-end min-h-[400px]">
+<span class="material-symbols-outlined text-secondary-fixed text-7xl absolute -top-4 -left-4 opacity-50" data-icon="format_quote" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-headline text-2xl text-secondary-fixed leading-tight z-10">
+                        "The intersection of faith and mental health is where true holistic healing begins for the soul."
+                    </blockquote>
+<p class="text-on-primary-container mt-6 font-medium text-sm tracking-widest uppercase">— Academic Ethos</p>
+</div>
+<!-- Justin Wilson Card -->
+<div class="lg:col-span-6 bg-surface-container-lowest editorial-shadow rounded-xl overflow-hidden group">
+<div class="h-64 relative">
+<img alt="Justin Wilson" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Professional male speaker in modern business casual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-fsRtnc6VXkY-4-FsHQE1PcIi7O92Juw1SD0mDz_jCqtIcVQCHKM3pg8r3PLAO1yKQgdj4yDLZHCSu08NV8NXG12SKzeUqohKvppPmWAYVbPr6nYvoK8XTcC-4R_oipmEjINHJ2n8yobko_rCvZc4ADXimXX8lGr7EI5SfeczutyvAtx0YAtppVgS6jkoMvZvCya6GauoQF7ob0dOGycdkgW2a_1WWLy0DQNZVa8R_OZjF5q3V2CtHzkAEIgl3K_xzQB7l3vWAno"/>
+<div class="absolute bottom-4 right-4 bg-secondary-container p-3 rounded-full">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="mic">mic</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-primary mb-1">Justin Wilson</h3>
+<p class="text-secondary font-bold text-xs uppercase mb-6">Director of Christian Mental Health</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Author of the influential work <span class="italic font-medium text-on-surface">'Courageous Vulnerability'</span>, Justin is a sought-after speaker and certified life coach specializing in the dynamics of spiritual resilience and emotional transparency.
+                        </p>
+<div class="flex gap-4">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold rounded-full">Author</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold rounded-full">Life Coach</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold rounded-full">Speaker</span>
+</div>
+</div>
+</div>
+<!-- Dr. LaSondra Barnes Card -->
+<div class="lg:col-span-6 bg-surface-container-lowest editorial-shadow rounded-xl overflow-hidden group">
+<div class="h-64 relative">
+<img alt="Dr. LaSondra Barnes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Confident female academic professional in clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnBy0xw6Qi_OvoyNjoWO_PjeDApDashAhhIesC6cLSrbTLLoU63q6OKfDtPsof48KkMjfdwIK2Qte2p64BBX9hE321U0Sews3Pq7J2ctHDRMJsiQJrgo9zp00rucbQyDRK-RvMYDb3paJOBNrRVccjV9kOsMnsgHCIr04J4DyiJLpUukQ4glax0yft92ZuwEhNYXSVG7z6QT1kkaw33NvOPC0_kl0gsvLVOuO604cj4MDlgCDqvbQaCkbHn0UoHbjpFYhPgleuMEE"/>
+<div class="absolute bottom-4 right-4 bg-primary-fixed p-3 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="book">book</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-primary mb-1">Dr. LaSondra Barnes, D.Min</h3>
+<p class="text-secondary font-bold text-xs uppercase mb-6">Pastoral Care &amp; Mental Health Lecturer</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Assistant Professor at Lancaster Bible College and author of <span class="italic font-medium text-on-surface">'Rejected to Accepted'</span>. Her work focuses on the intersectional healing of the mind through pastoral care and clinical psychology frameworks.
+                        </p>
+<div class="flex gap-4">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold rounded-full">Professor</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold rounded-full">Lecturer</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold rounded-full">Researcher</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Accreditation Banner -->
+<section class="bg-surface-container-low py-16 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-md">
+<h3 class="font-headline text-2xl text-primary mb-4">Continuing Education Excellence</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Our programs are built on rigorous standards, ensuring every student receives clinical training that honors their spiritual foundation.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12 opacity-60">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="verified">verified</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Accredited</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="history_edu">history_edu</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">CE Certified</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="clinical_notes">clinical_notes</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Clinical Standard</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container pt-20 pb-10 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-on-primary-container/10">
+<div class="md:col-span-5">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="school">school</span>
+</div>
+<span class="font-headline text-2xl text-on-primary tracking-tight">FIMHS</span>
+</div>
+<p class="text-on-primary-container/80 leading-relaxed mb-8 max-w-sm">
+                        Dedicated to equipping leaders with the clinical tools and spiritual wisdom necessary to heal minds and restore hope.
+                    </p>
+</div>
+<div class="md:col-span-2">
+<h4 class="text-on-primary font-bold text-xs uppercase tracking-widest mb-6">Connect</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-secondary-fixed transition-colors" href="https://www.facebook.com/" rel="noopener" target="_blank">Facebook</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="https://www.youtube.com/" rel="noopener" target="_blank">YouTube</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="mailto:admissions@faithinformed.edu">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="text-on-primary font-bold text-xs uppercase tracking-widest mb-6">Resources</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-secondary-fixed transition-colors" href="Recognition.html#affiliations">Affiliations</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="Recognition.html#accreditations">Accreditations</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="Student.html">Academic Portal</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="text-on-primary font-bold text-xs uppercase tracking-widest mb-6">Newsletter</h4>
+<form class="relative" action="mailto:admissions@faithinformed.edu" method="post" enctype="text/plain">
+<input class="w-full bg-primary/50 border-none rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-secondary text-white" name="email" placeholder="Email Address" type="email" required/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 text-secondary-fixed" type="submit">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-on-primary-container/60">
+                    © 2024 Faith Informed Mental Health School of Continuing Education. All rights reserved.
+                </p>
+<div class="flex gap-6 text-xs text-on-primary-container/60">
+<a class="hover:text-on-primary" href="Recognition.html#privacy">Privacy Policy</a>
+<a class="hover:text-on-primary" href="Recognition.html#terms">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
